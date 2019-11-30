@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="app.css" rel="stylesheet">
+    </head>
+    <body ng-app="PubSubAngApp" >
+       <h1 >receiving.....</h1>
+
+
+
+<div id="Receiver" ng-controller="ReceivingCtrl" class="controller" style="display: flex;justify-content:flex-end;width: 1000px;">
+     <span class="received">{{model.message}}</span> <span style="padding-left: 10px;">:User</span>
+</div>
+<div ng-controller="PublishingCtrl" class="controller-1">
+    <textarea type="text" ng-model="model.message" style="height: 100px;width: 400px;padding: 10px;font-size: 17px;"></textarea>
+    <button ng-click="clickMe(model.message)" style="display: flex;align-content: flex-end;">Send!!!!!</button>
+</div>
+
+<script>
+    AUTOBAHN_DEBUG = true;
+ </script>
+ <script src="autobahn.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+ <script src="app.js"></script>
+</body>
+</html>

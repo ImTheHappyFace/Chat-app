@@ -1,0 +1,17 @@
+.received {
+    font-weight: bold;
+}
+
+/* .controller {
+    border: 1px solid rgba(0, 0, 0, 0.377);
+    padding: 30px;
+} */
+
+.controller-1{
+    padding-top: 40px;
+}
+
+.controller {
+    padding: 20px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
